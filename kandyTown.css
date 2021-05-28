@@ -1,0 +1,41 @@
+
+#text{  
+	color: blue;
+	text-align:center;
+	font-size:2.5vw;
+	top:20px;
+}
+#image{
+	opacity:0.65;
+	vertical-align:middle;
+	height:300px;
+	width:1200px
+	
+}
+
+#column2{float:left;
+         width:90%;
+		 padding:1%;
+		 padding:60px;
+		 }
+.fontType{font-family:Times New Roman;
+		  font-size:1.5vw;
+	}
+#place1{
+		float:left;                            
+        width:23%;
+		padding:1%;
+}
+
+.fontType{font-size:1.5vw;}
+#menu{
+	text-align:center;
+}
+.time{
+	border:2px solid blue;
+	border-radius:25px;               /*CSS Rounded Border*/
+	text-align: center;            
+	padding:1%;                       /*CSS Padding*/
+	box-shadow: 10px 10px 5px grey;   /*CSS Box Shadow*/
+	width:100%;
+}

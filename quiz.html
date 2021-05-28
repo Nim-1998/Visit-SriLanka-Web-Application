@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Favicon Image-->
+        <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+        
+        <!--Title-->
+        <title>Quiz | Visit Sri Lanka</title>
+
+        <!--External Css Link-->
+        <link rel="stylesheet" href="layout-styles.css" type="text/css">
+        
+        <!--Importing Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        
+        <!--Setting the view point-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!--link quiz page extaenal style sheet-->
+		<link href ="quiz.css" rel ="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <!--Logo-->
+                <div class="logo-div">
+					<a href="index.html"><img class="logo" src="images/logo.png" title="Logo" alt="logo"></a>
+                </div>
+
+				<!--Site Map and Team button-->
+				<div class="site-mapicon-div">
+					<a href="https://www.google.lk/maps/place/Sri+Lanka/@7.8517307,78.46154,7z/data=!3m1!4b1!4m5!3m4!1s0x3ae2593cf65a1e9d:0xe13da4b400e2d38c!8m2!3d7.873054!4d80.771797"
+						target="_blank"><img id="mapicon" title="Colombo Map" alt="Colomo Map button" src="images/mapicon.png"></a>
+					<a href="sitemap.html"><img id="sitemapicon" title="Site Map" alt="Site Map button" src="images/sitemap.png"></a>
+					<a href="members.html"><img id="teamicon" title="Web Team" alt="Web Team button" src="images/team.png"></a>
+				</div>
+				
+				<!--Welcome Text-->
+				<div class="welcome-text-div">
+					<p id="welcome-text">Make a Wish to Visit Sri Lanka...</p>
+				
+				</div>
+				
+				<!--Main Menu-->
+				<div class="main-menu-div">
+					<div class="menu" id="mainmenu">
+						<a href="index.html">Home</a>
+						<a href="about.html">About Sri Lanka</a>
+						<a href="gallery.html">Gallery</a>
+						<a href="contact.html">Contact Us</a>
+					</div>
+                </div>
+            </div>
+            
+        </header>
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+        <section>
+            <script>
+					function check(){
+						window.scrollTo(0,0);
+					    document.getElementById('time').style.display="none";
+						var ques1 = document.quiz.ques1.value;
+						var ques2 = document.quiz.ques2.value;
+						var ques3 = document.quiz.ques3.value;
+						var ques4 = document.quiz.ques4.value;
+						var ques5 = document.quiz.ques5.value;
+						var ques6 = document.quiz.ques6.value;
+						var ques7 = document.quiz.ques7.value;
+						var ques8 = document.quiz.ques8.value;
+						var ques9 = document.quiz.ques9.value;
+						var ques10 = document.quiz.ques10.value;
+						// set correct in to the array
+						var message=["Question 1: Ceylon<br>","Question 2: Sri Jayawardanapura Kotte<br>","Question 3: Rupee<br>","Question 4: Sinhala<br>","Question 5: Buddhism<br>","Question 6: Galle Fort<br>","Question 7: Gregory Park<br>","Question 8: Sugathadasa Stadium<br>","Question 9: Queen Hotel<br>","Question 10: Kandy City Center<br>"];
+						var answer= " ";
+						var inc =0;  //no of correct answers
+						var dic =0;  //no of incorrect answers
+						var correctMarks = 0;
+						var incorretMarks = 0;
+						
+						if (ques1 == "Ceylon") {
+								correctMarks=correctMarks+2;
+								inc++;
+						}else {
+							dic++;
+							answer += message[0];
+							incorretMarks--;
+						}
+							if (ques2 == "Sri Jayawardanapura Kotte") {
+								correctMarks=correctMarks+2;
+								inc++;
+						}else {
+							dic++;
+							answer += message[1];
+							incorretMarks--;
+						}	
+							if (ques3 == "Rupee") {
+								correctMarks=correctMarks+2;
+								inc++;
+							}else {
+								dic++;
+								answer += message[2];
+								incorretMarks--;
+							}
+							
+							if (ques4 == "Sinhala") {
+								correctMarks=correctMarks+2;
+								inc++;
+						}else {
+								dic++;
+								answer += message[3];
+								incorretMarks--;
+						}
+							if (ques5 == "Buddhism") {
+								correctMarks=correctMarks+2;
+								inc++;
+						}	else{
+								dic++;
+								answer += message[4];
+								incorretMarks--;
+						}
+							if (ques6 == "Galle Fort") {
+								correctMarks=correctMarks+2;
+								inc++;
+							}else{
+								dic++;
+								answer += message[5];
+								incorretMarks--;
+							}
+							
+							if (ques7 == "Gregory Park") {
+								correctMarks=correctMarks+2;
+								inc++;
+						}else{
+								dic++;
+								answer += message[6];
+								incorretMarks--;
+						}
+							if (ques8 == "Sugathadasa Stadium") {
+								correctMarks=correctMarks+2;
+								inc++;
+						}	else {
+								dic++;
+								answer += message[7];
+								incorretMarks--;
+						}
+							if (ques9 == "Queen Hotel") {
+								correctMarks=correctMarks+2;
+								inc++;
+							}else{
+								dic++;
+								answer += message[8];
+								incorretMarks--;
+							}
+
+							if (ques10 == "Kandy City Center") {
+								correctMarks=correctMarks+2;
+								inc++;
+						}else{
+								dic++;
+								answer += message[9];
+								incorretMarks--;
+						}
+						  var totalMarks =0 ;
+							if(correctMarks >= dic){
+								 totalMarks = correctMarks - dic;
+							 }
+							
+							 if(correctMarks < dic){
+								 totalMarks = 0;	 
+							 } 
+							  //chage background color according to the total marks
+							if(totalMarks > 11){
+								document.getElementById("change").style.backgroundColor = "#74D5DD";
+								document.getElementById("total_marks").innerHTML = "Total marks is "  + totalMarks ;
+								
+							}
+							if(totalMarks <= 10){
+							document.getElementById("change").style.backgroundColor = "#FF6961";
+							document.getElementById("total_marks").innerHTML = "Total marks is "  + totalMarks ;
+							}
+							 
+							//change the scene after  submit answers
+							document.getElementById("quiz").style.display = "none";
+							document.getElementById("after_submit").style.display = "block";
+							document.getElementById("number_correct").innerHTML = "You got " + inc + " correct answers.";
+							document.getElementById("number_incorrect").innerHTML = "You got " + dic + " incorrect answers. ";
+							document.getElementById("message").innerHTML = answer; 
+
+						}
+						//set timer  to one minite duration
+						function counterStart(){
+						document.getElementById("timer").innerHTML = "Time left ="+ 00 + ":" + 60	;
+						startTimer();
+						}
+
+						function startTimer() {
+						  var presentTime = document.getElementById('timer').innerHTML;
+						  var timeArray = presentTime.split(/[:]+/);
+						  var minite = timeArray[0];   //time array 0 index assign to variable minite
+						  var second = checkSecond((timeArray[1] - 1));   // time array 1 index assign to variable second  
+						 // if second equlas to 0 then call check function
+						  if(second==0)
+								{
+									check();
+								}
+
+						  document.getElementById("timer").innerHTML = minite + ":" + second;
+						  setTimeout(startTimer, 1000);
+						}
+
+						function checkSecond(sec) {
+						  if (sec < 10 && sec >= 0)
+						  {sec = "0" + sec;} 
+						  if (sec < 0)
+						  {sec = "59";}
+						  return sec;
+						}
+						
+				</script>
+				<body id="change" onload="counterStart()">
+				<h1 id="heading"> Visit Sri Lanka Quiz</h1>
+				<div class="timerStyle" id="time"> 
+					<p id="timer">
+					</p>
+				</div>
+				<form id = "quiz" name = "quiz">
+					<font color="#ffffff">
+						<p class="question">1.How was Sri Lanka formaly known ?</p>
+						<input type = "radio" id = "selection" name = "ques1" value = "Ceylon"> Ceylon<br>
+						<input type = "radio" id = "selection" name = "ques1" value = "Taprobana"> Taprobana<br>
+						<input type = "radio" id = "selection" name = "ques1" value = "Nyasaland"> Nyasaland<br>
+						
+						<p class="question">2.What is the capital of Sri Lanka ?</p>
+						<input type = "radio" id = "selection" name = "ques2" value = "Colombo"> Colombo<br>
+						<input type = "radio" id = "selection" name = "ques2" value = "Kandy"> Kandy<br>
+						<input type = "radio" id = "selection" name = "ques2" value = "Sri Jayawardanapura Kotte"> Sri Jayawardanapura Kotte<br>
+						
+						<p class="question">3.Which is the currency of Sri Lanka ?</p>
+						<input type = "radio" id = "selection" name = "ques3" value = "Taka"> Taka<br>
+						<input type = "radio" id = "selection" name = "ques3" value = "Rupee"> Rupee<br>
+						<input type = "radio" id = "selection" name = "ques3" value = "Yen"> Yen<br>
+						
+						<p class="question">4.What is the official main language of Sri Lanka ?</p>
+						<input type = "radio" id = "selection" name = "ques4" value = "Tamil"> Tamil<br>
+						<input type = "radio" id = "selection" name = "ques4" value = "English"> English<br>
+						<input type = "radio" id = "selection" name = "ques4" value = "Sinhala"> Sinhala<br>
+						
+						<p class="question">5.What is the official religion of Sri Lanka ?</p>
+						<input type = "radio" id = "selection" name = "ques5" value = "Buddhism"> Buddhism<br>
+						<input type = "radio" id = "selection" name = "ques5" value = "Hinduism"> Hinduism<br>
+						<input type = "radio" id = "selection" name = "ques5" value = "Christianity"> Christianity<br>
+						
+						<p class="question">6.Select the place which is not located in Colombo town</p>
+						<input type = "radio" id = "selection" name = "ques6" value = "Lotus Tower"> Lotus Tower<br>
+						<input type = "radio" id = "selection" name = "ques6" value = "Galle Fort"> Galle Fort<br>
+						<input type = "radio" id = "selection" name = "ques6" value = "Galle Face"> Galle Face<br>
+						
+						<p class="question">7.Select the park which is not located in Colombo town</p>
+						<input type = "radio" id = "selection" name = "ques7" value = "Viharamahadevi Park"> Viharamahadevi Park<br>
+						<input type = "radio" id = "selection" name = "ques7" value = "Gangaramaya Park"> Gangaramaya Park<br>
+						<input type = "radio" id = "selection" name = "ques7" value = "Gregory Park"> Gregory Park<br>
+						
+						<p class="question">8.Select the stadium which is located in Colombo town</p>
+						<input type = "radio" id = "selection" name = "ques8" value = "Galle International Cricket Stadium"> Galle International Cricket Stadium<br>
+						<input type = "radio" id = "selection" name = "ques8" value = "Sugathadasa Stadium"> Sugathadasa Stadium<br>
+						<input type = "radio" id = "selection" name = "ques8" value = "Pallekelle Cricket Stadium"> Pallekelle Cricket Stadium<br>
+						
+						<p class="question">9.Select the hotel which is not located in Colombo town</p>
+						<input type = "radio" id = "selection" name = "ques9" value = "Galle Face Hotel"> Galle Face Hotel<br>
+						<input type = "radio" id = "selection" name = "ques9" value = "Shangrila Hotel"> Shangrila Hotel<br>
+						<input type = "radio" id = "selection" name = "ques9" value = "Queen Hotel"> Queen Hotel<br>
+						
+						<p class="question">10.Select the shoping mall which is not located in Colombo town</p>
+						<input type = "radio" id = "selection" name = "ques10" value = "One Galle Face"> One Galle Face<br>
+						<input type = "radio" id = "selection" name = "ques10" value = "Kandy City Center"> Kandy City Center<br>
+						<input type = "radio" id = "selection" name = "ques10" value = "Marino Mall"> Marino Mall<br>
+						<!--set onAction to the button-->
+						<input id = "button" type = "button" value = "SUBMIT" onclick = "check()" align="right">
+					</font>
+				</form>
+				<div id = "after_submit">
+					<p id = "number_correct"></p>
+					<p id = "number_incorrect"></p>
+					<p id = "total_marks"></p>
+					<p id = "message"></p>
+				</div>
+				
+			</body>
+        </section>
+       
+
+
+        <!------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+
+        <footer>
+            <div class="footer">
+                <div class="social-links">
+                    <p>Stay Connect With Us..</p>
+                    <a href="#fb"><img id="fb-icon" title="Facebook" alt="Facebook button" src="images/facebook.png"></a>
+                    <a href="#twitter"><img id="twitter-icon" title="Twitter" alt="Twitter button" src="images/twitter.png"></a>
+                    <a href="#youtube"><img id="youtube-icon" title="Youtube" alt="Youtube button" src="images/youtube.png"></a>
+                </div>
+
+                <div class="navi-links">
+                    <div class="impotant-links">
+                        <p>Important Links</p>
+                        <ul>
+                            <li><a href="https://www.police.lk/" target="_blank">Sri Lankna Police</a></li><br><br>
+                            <li><a href="https://www.army.lk/" target="_blank">Sri Lankan Army</a></li><br><br>
+                            <li><a href="http://www.nhsl.health.gov.lk/" target="_blank">National Hospital Sri Lanka</a></li><br><br>
+                            <li><a href="http://www.immigration.gov.lk/" target="_blank">Department of Immigration and Emigration</a></li><br><br>
+                            <li><a href="https://www.srilankan.com/en_uk/lk" target="_blank">SriLankan Airlines</a></li>
+                        </ul>
+                    </div>
+
+					<div class="about-site">
+						<p>About the Site</p>
+						<ul>
+							<li><a href="sitemap.html">Site Map</a></li><br><br>
+							<li><a href="quiz.html">Quiz</a></li><br><br>
+							<li><a href="members.html">Web Development Team</a></li>
+						</ul>
+					
+					</div>
+					
+					<div class="page-links">
+						<p>Menu</p>
+						<ul>
+							<li><a href="index.html">Home</a></li><br><br>
+							<li><a href="about.html">About Sri Lanka</a></li><br><br>
+							<li><a href="gallery.html">Gallery</a></li><br><br>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</div>
+                </div>
+
+                <div class="down-logo"> 
+                    <p>Proud Projet By</p>
+                    <img id="footer-logo" src="images/iit-logo.png" title="IIT Logo" alt="IIT LOGO">
+                </div>
+            </div>
+            
+
+            <div class="copyrights-note">
+                <p id="copyrights-note-text">Copyright  2020 | &copy; Visit Colombo | All Rights Reserved | Design By: <a href="student3.html">Nimna Fernando</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,202 @@
+.slideshow {
+  width: 100%;
+  height: 600px;
+  position: relative;  
+}
+
+.slideshow img{
+    height: 600px;
+}
+
+.slides-text{
+    text-align: center;
+    position:absolute;
+    top: 40%;
+    left:15%;
+    color: white;
+    font-size: 500%;
+    font-weight: 900;
+}
+
+#scl-down{
+    position:absolute;
+    top:600px;
+    left:47%;
+    width: 8%;
+}
+
+.fadefx {
+  animation-name: fadefx;
+  animation-duration: 5s;
+}
+
+@keyframes fadefx {
+  from {opacity: .15} 
+  to {opacity: 5}
+}
+
+.menu-cards{
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;  
+}
+
+.card {
+  text-align: justify; 
+  background-color: rgb(219, 233, 250); 
+  width: 18%; 
+  margin-left: 5%;
+} 
+
+.headingincard{
+    width: 100%;
+    background-color: #060667;
+    color: white;
+}
+
+.headingincard p{
+    text-align: left;
+    font-size: 130%;
+    font-weight: 900;
+    padding-left: 3%;
+}
+
+.detailsincard{
+    font-size: 95%;
+    padding-left:5% ;
+    padding-right:5% ;
+}
+
+.button-card{
+    margin-left: 25% ;
+    margin-bottom: 3%;
+    width: auto;
+    text-align: center;
+}
+    
+.buttonincard{ 
+    float: left;
+    border: 2px solid white; 
+    padding: 8%;
+    color: white;
+    background-color:#060667; 
+    cursor: pointer; 
+    width: 100%; 
+    font-size: 18px; 
+    text-decoration: none;
+} 
+
+.buttonincard:hover { 
+  opacity: 0.9; 
+} 
+    
+.card:hover { 
+    box-shadow: 0 2px 6px 0 black;
+    transform: scale(1.02); 
+} 
+
+.places {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.placesheading {
+    height: 400px;
+    background-color:#03033a;
+    color: white;
+    text-align: center;
+    font-size: 400%;
+    font-weight: bold;
+    width:30%;
+    
+}
+
+.placesheading p{
+    padding-top: 20%;
+}
+
+.image-grid {
+    float: left;
+    width:69%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%  ;
+    background-color:rgb(219, 233, 250);
+  }
+
+  .container {
+      margin-left: 5%;
+    position: relative;
+    width: 90%;
+    height: 400px;
+  }  
+
+  .image{
+      width: 100%;
+  }
+
+  .image img{
+      width: 100%;
+      height: 390px;
+  }
+  
+  .overlayfx {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    right: 0;
+    background-color: rgba(13, 105, 139,0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlayfx {
+    height: 97.3%;
+    width:100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .text a{
+      text-decoration: none;
+      color: white;
+  }
+
+.events {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.eventsheading{
+    height: 400px;
+    background-color:#03033a;
+    color: white;
+    text-align: center;
+    font-size: 400%;
+    font-weight: bold;
+    width:40%;  
+}
+
+.eventsheading p{
+    padding-top: 10%;
+}
+
+.imagegrid1{
+    float: left;
+    width:59%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%  ;
+    background-color:rgb(219, 233, 250);
+  }

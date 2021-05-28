@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Favicon Image-->
+        <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+        
+        <!--Title-->
+        <title>Contact Us | Visit Sri Lanka</title>
+
+        <!--External Css Link-->
+        <link rel="stylesheet" href="layout-styles.css" type="text/css">
+        <link rel="stylesheet" href="contact-styles.css" type="text/css">
+        
+        <!--Importing Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        
+        <!--Setting the view point-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <!--Logo-->
+                <div class="logo-div">
+                    <a href="index.html"><img class="logo" src="images/logo.png" title="Logo" alt="logo"></a>
+                </div>
+
+                <!--Site Map and Team button-->
+                <div class="site-mapicon-div">
+                    <a href="https://www.google.lk/maps/place/Sri+Lanka/@7.8517307,78.46154,7z/data=!3m1!4b1!4m5!3m4!1s0x3ae2593cf65a1e9d:0xe13da4b400e2d38c!8m2!3d7.873054!4d80.771797"
+                        target="_blank"><img id="mapicon" title="Colombo Map" alt="Colomo Map button" src="images/mapicon.png"></a>
+                    <a href="sitemap.html"><img id="sitemapicon" title="Site Map" alt="Site Map button" src="images/sitemap.png"></a>
+                    <a href="members.html"><img id="teamicon" title="Web Team" alt="Web Team button" src="images/team.png"></a>
+                </div>
+                
+                <!--Welcome Text-->
+                <div class="welcome-text-div">
+                    <p id="welcome-text">Make a Wish to Visit Sri Lanka...</p>
+                
+                </div>
+                
+                <!--Main Menu-->
+                <div class="main-menu-div">
+                    <div class="menu" id="mainmenu">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Sri Lanka</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+            <section>
+                <!--Contact Info Section-->
+                <div class="cntinfo">
+
+                    <h1>Contact Us</h1>
+
+                     <div class="contact">
+
+                        <!--Map-->
+                        <div class="map">
+
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                                        src="https://maps.google.com/maps?q=Department%20of%20Immigration%20%26%20Emigration%20srilanka&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                        href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">wordpress discount</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="info">
+
+                            <p>123,<br>Suhurupaya,<br> Subuthi Dr, <br>Battaramulla</p>
+                            <p>+94 112 888 123 , +94 114 567 789</p>
+                            <p>info@visitsrilanka.lk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Feed back form-->
+                <div class="form">
+                    <div class="form-content">
+                        <div class="formcontainer">
+                            <form name="feed-form" onsubmit="return validateForm()" method="GET">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <label for="fname">First Name</label>
+                                    </div>
+                                    <div class="col-2">
+                                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                        
+                                <div class="row">
+                                    <div class="col-1">
+                                        <label for="lname">Last Name</label>
+                                    </div>
+                                    <div class="col-2">
+                                        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                        
+                                <div class="row">
+                                    <div class="col-1">
+                                        <label for="email">Email Address</label>
+                                    </div>
+                                    <div class="col-2">
+                                        <input type="email" id="email" name="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                        
+                                <div class="row">
+                                    <div class="col-1">
+                                        <label for="comments">Comments</label>
+                                    </div>
+                                    <div class="col-2">
+                                        <textarea id="comments" name="comments" placeholder="Comments" style="height:100px"></textarea>
+                                    </div>
+                                </div>
+                        
+                                <div class="row">
+                                    <div class="col-1">
+                                        <label for="rating">Rate Us</label>
+                                    </div>
+                                    <div class="col-2">
+                                        <input type="radio" id="excellent" name="rating" value="excellent">
+                                        <label for="excellent">Excellent</label>
+                                        <input type="radio" id="good" name="rating" value="good">
+                                        <label for="good">Good</label>
+                                        <input type="radio" id="bad" name="rating" value="bad">
+                                        <label for="bad">Bad</label>
+                                        <input type="radio" id="worst" name="rating" value="worst">
+                                        <label for="worst">Worst</label>
+                                    </div>
+                                </div>
+                        
+                                <div class="row">
+                                    <input type="submit" value="Submit">
+                                </div>
+                        
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer section-->
+        <footer>
+            <div class="footer">
+                <div class="social-links">
+                    <p>Stay Connect With Us..</p>
+                    <a href="#fb"><img id="fb-icon" title="Facebook" alt="Facebook button" src="images/facebook.png"></a>
+                    <a href="#twitter"><img id="twitter-icon" title="Twitter" alt="Twitter button" src="images/twitter.png"></a>
+                    <a href="#youtube"><img id="youtube-icon" title="Youtube" alt="Youtube button" src="images/youtube.png"></a>
+                </div>
+
+                <div class="navi-links">
+                    <div class="impotant-links">
+                        <p>Important Links</p>
+                        <ul>
+                            <li><a href="https://www.police.lk/" target="_blank">Sri Lankna Police</a></li><br><br>
+                            <li><a href="https://www.army.lk/" target="_blank">Sri Lankan Army</a></li><br><br>
+                            <li><a href="http://www.nhsl.health.gov.lk/" target="_blank">National Hospital Sri Lanka</a></li><br><br>
+                            <li><a href="http://www.immigration.gov.lk/" target="_blank">Department of Immigration and Emigration</a></li><br><br>
+                            <li><a href="https://www.srilankan.com/en_uk/lk" target="_blank">SriLankan Airlines</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="about-site">
+                        <p>About the Site</p>
+                        <ul>
+                            <li><a href="sitemap.html">Site Map</a></li><br><br>
+                            <li><a href="quiz.html">Quiz</a></li><br><br>
+                            <li><a href="members.html">Web Development Team</a></li>
+                        </ul>
+                    
+                    </div>
+                    
+                    <div class="page-links">
+                        <p>Menu</p>
+                        <ul>
+                            <li><a href="index.html">Home</a></li><br><br>
+                            <li><a href="about.html">About Sri Lanka</a></li><br><br>
+                            <li><a href="gallery.html">Gallery</a></li><br><br>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="down-logo"> 
+                    <p>Proud Projet By</p>
+                    <img id="footer-logo" src="images/iit-logo.png" title="IIT Logo" alt="IIT LOGO">
+                </div>
+            </div>
+            
+
+            <div class="copyrights-note">
+                <p id="copyrights-note-text">Copyright  2020 | &copy; Visit Colombo | All Rights Reserved | Design By: <a href="student2.html">Nathindu Dias</a></p>
+            </div>
+        </footer>
+
+    </body>
+
+    <!--script for validate feedback form-->              
+    <script>
+        function validateForm() {
+            var name = document.forms["feed-form"]["fname"].value;
+            if (name == "") 
+            {
+                alert("First Name Should be Filled Out");
+                return false;
+            }
+
+            var lname = document.forms["feed-form"]["lname"].value;
+            if (lname == "") 
+            {
+                alert("Last Name Should be Filled Out");
+                return false;
+            }
+
+            var comments = document.forms["feed-form"]["comments"].value;
+                if (comments == "") 
+                {
+                    alert("Please Write a comment");
+                    return false;
+                }
+
+                var select = document.forms["feed-form"]["rating"].value;
+                if (select == "") 
+                {
+                    alert("Please select a rating");
+                    return false;
+                }
+                else 
+                {
+                    alert("Thank You for your Feedback, " + name + "" + lname + "! You have rated our site as " + select + " and your comment was " + comments);
+                }
+            }
+        </script>
+</html>

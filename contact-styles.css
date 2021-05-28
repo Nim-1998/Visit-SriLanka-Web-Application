@@ -1,0 +1,109 @@
+ .cntinfo{
+  width: 100%;
+  height: auto;
+  margin: 2%;
+ }
+ 
+ h1{
+  font-size: 220%;
+  padding:2%;   
+ }
+ 
+ .mapouter {
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 500px;
+}
+                            
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 500px;
+}
+
+.contact{
+    width:100%;
+    border: 10%;   
+}
+
+.map{
+    float: left;
+    width: 45%;
+}
+
+.info{
+    width:30%;
+    float: left;
+    padding-left: 5%;
+    border-left: 5px solid #03033a ;
+    margin-top:10% ; 
+   margin-left:5% ; 
+}
+
+.form {
+  margin: 10%;
+  width: 100%;
+  height: auto;
+}
+
+.form-content {
+  background-color:rgb(4, 21, 67);
+  margin: auto;
+  padding-left: 10px 10px;
+  width: 80%;
+}
+
+input[type=text],input[type=email],select, textarea {
+  width: 100%;
+  padding: 12px;
+  color: black;
+  font-size: 14px;
+  border: 1px solid rgb(3, 13, 59);
+  border-radius: 3px;
+  resize: horizontal;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color:#050533;
+  font-weight: bold;
+}
+
+input[type=submit] {
+  background-color: #0f1d87;
+  color: #f2f1e8;
+  font-size: 15px;
+  padding: 15px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #050533;
+}
+
+.formcontainer {
+  border-radius: 5px;
+  background-color:rgb(216, 236, 247);
+  padding: 20px;
+}
+
+.col-1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row{
+    width: 90%;
+}

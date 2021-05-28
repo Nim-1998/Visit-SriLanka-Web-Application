@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.header{
+    position: relative;
+    height: 170px;
+    width: 100% ;
+}
+
+.logo-div{
+    position:absolute;
+    bottom: 0;
+    left: 0px;
+    width: 20%;
+}
+
+.logo{
+    width:90%;
+    margin: 0px 5px 5px 15px;
+    padding: 2px 2px 2px 2px;
+}
+
+.site-mapicon-div{
+    float:right;
+}
+
+#sitemapicon{
+    padding-top: 2px;
+    padding-right: 10px;
+    height: 30px;
+}
+
+#teamicon{
+    padding-top: 2px;
+    padding-right: 10px;
+    height: 30px;
+}
+
+#mapicon{
+    padding-top: 2px;
+     padding-right: 10px;
+    height: 30px;
+}
+
+.welcome-text-div{
+    position: absolute;
+    top:60px;
+    right: 0px;
+    padding-right: 5px; 
+ }
+
+#welcome-text{
+    vertical-align: top;
+    font-size: 18px;
+    font-family: 'Pacifico',Georgia, 'Times New Roman', Times, serif;     
+}
+
+.main-menu-div{
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    width: 78%;
+    height: auto;
+    text-align: center;
+    background-color:#03033a;
+}
+         
+.menu {
+    text-align: center;
+    float: right;
+    overflow: hidden;
+    background-color: #03033a;
+    height: auto;
+}
+
+.menu a {   
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    height: auto;
+ }
+
+ .menu a:hover {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    height: auto;
+}
+
+.menu .button{
+    display: none;
+    position: relative;
+    right: 0;
+    top: 5px;
+    height: 20px;
+}
+
+.menu-button{
+    float: right;
+    height: 20px;
+}
+
+div{
+    float: left;   
+}
+
+.footer{
+    height: auto;
+    width: 100%;
+    background-color: #03033a;
+}
+
+.social-links{
+    width: 19%;
+    float: left;
+}
+
+.social-links p{
+    font-size: 100%;
+    color: white;
+    font-family: 'Pacifico',Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10%;
+    padding-left: 20%; 
+}
+
+#fb-icon{
+    width: 15%;
+    padding-left: 18%;
+    padding-bottom: 5%;
+}
+
+#twitter-icon{
+    width: 15%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+#youtube-icon{
+    width: 17%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+        
+.navi-links{
+    float: left;
+    width: 60%;
+}
+
+.navi-links p {
+    border-left: 3px solid white;
+    font-size: 100%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-left: 10%;
+}
+
+.navi-links a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.navi-links ul{
+    list-style-type:square;
+    color: white;
+}
+
+.impotant-links {
+    float: left;
+    width: 30%;
+    padding-left: 2%;
+  
+}
+
+.about-site {
+    float: left;
+    width: 30%;
+    padding-left: 2%;
+}
+
+.page-links {
+    float: left;
+    width: 30%;
+    padding-left: 2%;  
+}
+           
+.down-logo{
+    width: 20%;
+    float: left; 
+}
+
+.down-logo p{
+    font-size: 20px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: 12%;
+    text-align: center;
+}
+
+#footer-logo{
+    padding-top: 5%;
+    padding-left: 10%;
+    width: 80%;
+}
+
+.copyrights-note{
+    width: 100%;
+}
+
+.copyrights-note p{
+    font-size: 80%;
+    text-align: center;
+}
+
